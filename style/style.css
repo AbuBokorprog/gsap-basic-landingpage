@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: black;
+}
+#nav img {
+  height: 50px;
+}
+
+#nav2 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+#nav3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#nav3 button {
+  padding: 15px 20px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+#nav3 button:nth-child(1) {
+  background-color: black;
+  color: white;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  padding: 50px 0;
+  background-color: #000;
+  position: relative;
+}
+#main h1 {
+  font-size: 90px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main h1 span {
+  background-color: brown;
+  padding: 5px 25px;
+  border-radius: 50px;
+}
+
+#main h5 {
+  position: absolute;
+  font-weight: 500;
+  font-size: 16px;
+  bottom: 20%;
+  left: 50%;
+}
+
+#main #left-img {
+  height: 150px;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+#main #right-img {
+  height: 150px;
+  position: absolute;
+  bottom: 150px;
+  right: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  #nav img {
+    height: 30px;
+  }
+  #nav2 {
+    display: block;
+    visibility: hidden;
+  }
+  #nav3 button {
+    padding: 15px 10px;
+    border-radius: 0;
+  }
+  #main {
+    padding: 150px 0;
+  }
+  #main h1 {
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #main h1 span {
+    background-color: brown;
+    padding: 0px 50px;
+    border-radius: 50px;
+  }
+  #main #left-img {
+    height: 120px;
+    top: 20px;
+    left: 20px;
+  }
+  #main #right-img {
+    height: 120px;
+    bottom: 200px;
+    right: 20px;
+  }
+  #main h5 {
+    bottom: 20%;
+    left: 40%;
+  }
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 992px) {
+}
+@media screen and (min-width: 1200px) {
+}
